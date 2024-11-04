@@ -1,0 +1,4 @@
+hubspot-api-client
+requests
+sqlalchemy
+pymysql
