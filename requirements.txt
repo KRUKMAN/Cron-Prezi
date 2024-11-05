@@ -2,3 +2,5 @@ hubspot-api-client
 requests
 sqlalchemy
 pymysql
+psycopg2
+os
