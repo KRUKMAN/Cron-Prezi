@@ -8,10 +8,6 @@ from datetime import datetime
 import re
 from config import DATABASE_URL, HUBSPOT_ACCESS_TOKEN
 
-# Simple logging setup
-print("Setting up logging...")
-
-# Set up database connection
 print(f"Connecting to database at {DATABASE_URL}")
 engine = db.create_engine(DATABASE_URL)
 metadata = MetaData()
@@ -103,7 +99,7 @@ def update_or_add_hubspot_company(user_data):
         except Exception as e:
             print(f"Error updating or adding HubSpot company for owner_email {owner_email}: {e}")
 
-# Main process
+
 if __name__ == "__main__":
     user_data = get_user_data()
     if user_data:
